@@ -1,0 +1,1404 @@
+<?xml version="1.0"?>
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns"
+xmlns:skos="http://www.w3.org/2004/02/skos/core">
+    <Configuration>
+        <!--- Schöpfer- und Projektangaben-->
+        <!--- ID 2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/TestElement">
+            <Schema-ID>3</Schema-ID>
+            <skos:note></skos:note>
+            <skos:prefLabel>TestElementGND</skos:prefLabel>
+            <Validation>
+                <required>True</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>GND</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 2.1-->
+
+        <!--- ID 5.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/ProjectTime">
+            <Schema-ID>5.2</Schema-ID>
+            <skos:note>Hier kann die Projektlaufzeit angegeben werden. Angabe per ISO 8601-1:2019 Revision; Beim Ausfüllen jeweils Anfang und Ende des Zeitraums angeben (YYYY, YYYY-MM oder YYYY-MM-TT).</skos:note>
+            <skos:prefLabel>ProjectTime</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>Duration</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 6-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/FundingReference">
+            <Schema-ID>6</Schema-ID>
+            <skos:note>Informationen zu Institutionen, welche finanzielle Unterstützung in Form von Drittmitteln bei der Erstellung des registrierten For-schungsdatensatzes geleistet haben.Angabe per GND oder ROR; Wenn die Forschung aus dem regulären Etat einer Instituti-on finanziert wurde, ist hier nichts anzugeben. Beispiel: Deutsche For-schungsgemeinschaft.</skos:note>
+            <skos:prefLabel>FundingReference</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>GND, ROR</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+
+        <!--- Titelangaben-->
+        <!--- ID 7-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/Titel">
+            <Schema-ID>7</Schema-ID>
+            <skos:note>Angabe des Titels des Forschungsdatensatzes. Ein aussagekräftiger Titel beinhaltet die Art der Daten und deren den Inhalt.Titel deutsch und englisch angeben. Bereits vorhandene Originaltitel, etwa bei Altdaten, können über das Tag „isNative“ markiert werden. Beispiel: Tabelle mit allen Geburtstagen der böhmischen Könige: Table with Birthdays of all Boheminan Kings.</skos:note>
+            <skos:prefLabel>Titel</skos:prefLabel>
+            <skos:altLabel>ObjectName</skos:altLabel>
+            <Validation>
+                <required>True</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 9-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/Language">
+            <Schema-ID>9</Schema-ID>
+            <skos:note>Angaben zu den im Forschungsdatensatz vorkommenden Sprachen. Auswahlliste auf Grundlage des ISO-Code 639-3 anzugeben. Leeres Feld bedeutet textuell nicht zu verarbeiten Historische Sprachen, z.B. lokale Dialekte, die nicht im ISO-Code enthalten sind, als Freitext angeben.</skos:note>
+            <skos:prefLabel>Language</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>ISO6393</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>True</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 9.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/LanguageType">
+            <Schema-ID>9.1</Schema-ID>
+            <skos:note>Verwendete Schriftart. Freitext man. 100 Wörter. Beipsiel: glagolitisch</skos:note>
+            <skos:prefLabel>LanguageType</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>Language</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 10-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/Abstract">
+            <Schema-ID>10</Schema-ID>
+            <skos:note>Textförmige Zusammenfassung des Inhaltes der Forschungsdaten und der beschreibenden Metadaten. Aufbau: Teaser: Der Teaser fasst Inhalt und Dateitypen des Forschungsdatensatzes in einem Satz zusammen. Text: Hier sollen weitere Angaben zum Forschungsdatensatz eingetragen werden, etwa zum Inhalt und Forschungskontext, zur Entstehung/Provenienz der Daten, zu den Erhebungs- und Verarbeitungsmethoden, etc. Abstract auf Deutsch und Englisch angeben. Max. 300 Wörter/1000 Zeichen. Eine Dopplung mit Angaben aus anderen Metadatenfeldern ist vorgesehen.</skos:note>
+            <skos:prefLabel>Abstract</skos:prefLabel>
+            <skos:altLabel>Headline</skos:altLabel>
+            <Validation>
+                <required>True</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>300</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+
+        <!--- Sacherschließung -->
+        <!--- ID 12-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/Geolocation">
+            <Schema-ID>12</Schema-ID>
+            <skos:note>In diesem Feld kann angegeben werden, zu welchen Orten im Forschungsdatensatz Aussagen getroffen werden. Angabe per GND. Wenn das Feld leer ist, kann keine geographische Angabe gemacht werden. Zusätzliche geographisch Angaben sind über die Unter-felder möglich.</skos:note>
+            <skos:prefLabel>GeoLocation</skos:prefLabel>
+            <skos:altLabel>SpecialInstructions</skos:altLabel>
+            <Validation>
+                <required>True</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>GND</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>True</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/geoLocationPoint">
+            <Schema-ID>12.1</Schema-ID>
+            <skos:note>Angabe eines geographischen Punktes im Raum.	Ein Punkt besteht aus einer Längen- und Breitenangabe.</skos:note>
+            <skos:prefLabel>geoLocationPoint</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Point</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.1.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/pointLongitude">
+            <Schema-ID>12.1.1</Schema-ID>
+            <skos:note>Längengrad des Punktes.	Wenn geolocationPoint benutzt wird, ist pointLongitude verpflichtend.</skos:note>
+            <skos:prefLabel>pointLongitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>geoLocationPoint</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Longitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.1.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/pointLatitude">
+            <Schema-ID>12.1.2</Schema-ID>
+            <skos:note>"Breitengrad des Punktes. Wenn geolocationPoint benutzt wird, ist pointLongitude verpflichtend.</skos:note>
+            <skos:prefLabel>pointLatitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>geoLocationPoint</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Latitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/geoLocationBox">
+            <Schema-ID>12.2</Schema-ID>
+            <skos:note>Die räumlichen Grenzen eines Rechtecks.	Eine Box wird durch zwei geographische Punkte definiert, linke untere und rechte obere Ecke.</skos:note>
+            <skos:prefLabel>geoLocationBox</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Box</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.2.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/westBoundLongitude">
+            <Schema-ID>12.2.1</Schema-ID>
+            <skos:note>Westliche Kante des Rechtecks als Längengrad ausgedrückt.</skos:note>
+            <skos:prefLabel>westBoundLongitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>geoLocationBox</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Longitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.2.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/eastBoundLongitude">
+            <Schema-ID>12.2.2</Schema-ID>
+            <skos:note>Östliche Kante des Rechtecks als Längengrad ausgedrückt.</skos:note>
+            <skos:prefLabel>eastBoundLongitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>geoLocationBox</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Longitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.2.3-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/southBoundLatitude">
+            <Schema-ID>12.2.3</Schema-ID>
+            <skos:note>Südliche Kante des Rechtecks als Längengrad ausgedrückt.</skos:note>
+            <skos:prefLabel>southBoundLatitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>geoLocationBox</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Latitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.2.4-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/northBoundLatitude">
+            <Schema-ID>12.2.4</Schema-ID>
+            <skos:note>Nördliche Kante des Rechtecks als Längengrad ausgedrückt.</skos:note>
+            <skos:prefLabel>northBoundLatitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>geoLocationBox</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Latitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.3-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/geoLocationPlace">
+            <Schema-ID>12.3</Schema-ID>
+            <skos:note>Feld, um per Freitext zusätzliche Informationen zum Ortsbezug angeben zu können.</skos:note>
+            <skos:prefLabel>geoLocationPlace</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.4-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/geoLocationPolygon">
+            <Schema-ID>12.4</Schema-ID>
+            <skos:note>Ein gezeichnetes Polygon, definiert durch eine Reihe von Punkten und Linien, welche die Punkte in einer geschlossenen Kette verbindet.</skos:note>
+            <skos:prefLabel>geoLocationPolygon</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Polygon</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.4.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/polygonPoint">
+            <Schema-ID>12.4.1</Schema-ID>
+            <skos:note>Ein Punkt in einem Polygon. Falls geoLocationPolygon genutzt wird, ist polygonePoint verpflichtend.</skos:note>
+            <skos:prefLabel>polygonPoint</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>geoLocationPolygon</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Point</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.4.1.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/polygonPointLongitude">
+            <Schema-ID>12.4.1.1</Schema-ID>
+            <skos:note>Längengrad eines Punktes. Falls geoLocationPolygon genutzt wird, ist polygoneLongitude verpflichtend.</skos:note>
+            <skos:prefLabel>polygonPointLongitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>polygonPoint</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Point</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.4.1.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/polygonLatitude">
+            <Schema-ID>12.4.1.2</Schema-ID>
+            <skos:note>Breitengrad eines Punktes. Falls geoLocationPolygon genutzt wird, ist polygoneLatitude verpflichtend.</skos:note>
+            <skos:prefLabel>polygonPointLatitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>polygonPoint</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Point</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.4.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/inPolygonPoint">
+            <Schema-ID>12.4.2</Schema-ID>
+            <skos:note>Für jede zusammenhängende Fläche, die größer als die Hälfte der Erde ist, definiert als ein (zufälliger) Punkt darin. inPolygonPoint ist nur notwendig, um das “Innen” eines Polygons anzugeben, wenn das Polygon größer als die Hälfte der Erde ist. Ansonsten wird die kleinere der beiden von dem Polygon umfassten Fläche genutzt. </skos:note>
+            <skos:prefLabel>inPolygonPoint</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Point</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.4.2.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/inPolygon_pointLongitude">
+            <Schema-ID>12.4.2.1</Schema-ID>
+            <skos:note>Längengrad des Punktes. Falls inPolygonPoint genutzt wird, ist inPolygon_pointLongitude verpflichtend. Der Längengrad des geographischen Punktes wird in Dezimalgraden (Positiv Ost) ausgedrückt.</skos:note>
+            <skos:prefLabel>inPolygon_pointLongitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>inPolygonPoint</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Longitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.4.2.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/inPolygon_pointLatitude">
+            <Schema-ID>12.4.2.2</Schema-ID>
+            <skos:note>Breitengrad des Punktes. Falls inPolygonPoint genutzt wird, ist inPolygon_pointLatitude verpflichtend. Der Breitengrad des geographischen Punktes wird in Dezimalgraden (Positiv Nord) ausgedrückt.</skos:note>
+            <skos:prefLabel>inPolygon_pointLatitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>inPolygonPoint</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Latitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.5-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/GeoLocationAlternativeName">
+            <Schema-ID>12.5</Schema-ID>
+            <skos:note>Feld, um zusätzliche (historische) Bezeichnungen zum Bezugsort angeben zu können, die in der GND nicht enthalten sind. Freitext; Max. 100 Wörter.</skos:note>
+            <skos:prefLabel>GeoLocationAlternativeName</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 12.5.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/GeoLocationAlternativeNameDate">
+            <Schema-ID>12.5.1</Schema-ID>
+            <skos:note>Zeitraum, in welchem die Bezeichnung im Feld „GeoLocationAlternativeName“ verwendet wurde.	Angabe als Freitext, wenn konkrete Zeiträume benennbar sind per ISO 8601-1:2019 Revision (Anfang und Ende des Zeitraums angeben (YYYY, YYYY-MM oder YYYY-MM-TT).</skos:note>
+            <skos:prefLabel>GeoLocationAlternativeNameDate</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>GeoLocationAlternativeName</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>Duration</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 14-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/TimePeriod">
+            <Schema-ID>14</Schema-ID>
+            <skos:note>In diesem Feld können nähere Angaben zum Zeitraum gemacht werden.</skos:note>
+            <skos:prefLabel>TimePeriod</skos:prefLabel>
+            <skos:altLabel>DateCreated</skos:altLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 14.a-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/TimePeriodDates">
+            <Schema-ID>14.a</Schema-ID>
+            <skos:note>Für genaue Angaben zum Zeitraum, über den Aussagen getroffen werden. Angabe per ISO 8601-1:2019 Revision; Beim Ausfüllen jeweils Anfang und Ende des Zeitraums angeben (YYYY, YYYY-MM oder YYYY-MM-TT).</skos:note>
+            <skos:prefLabel>TimePeriodeDates</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>TimePeriod</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>Duration</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 14.b-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/TimePeriodDescription">
+            <Schema-ID>14.b</Schema-ID>
+            <skos:note>In diesem Feld können Ergänzungen zum Datum in TimePeriod als Freitext eingetragen werden, z.B. Anfang 1930, Mitte 18. Jahrhundert, etc.	Freitext; Max. 100 Wörter</skos:note>
+            <skos:prefLabel>TimePeriodDescription</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>TimePeriod</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 17-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/SubjectNormed">
+            <Schema-ID>17</Schema-ID>
+            <skos:note>Über dieses Feld können weitere Schlagworte aus zusätzlichen, fachspezifischen kontrollierten Vokabularen angegeben werden.</skos:note>
+            <skos:prefLabel>SubjectNormed</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 17.a-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/SubjectNormedType">
+            <Schema-ID>17.a</Schema-ID>
+            <skos:note>Typ des verwendeten Normvokabulars.	Folgende Thesauri und kontrollierten Vokabulare können verwendet werden: Art and Architecture Thesaurus European Language Social Science Thesaurus (ELSST) Iconclass Library of Congress Subject Headings, Standard-Thesaurus Wirtschaft (STW), Wikidata</skos:note>
+            <skos:prefLabel>SubjectNormedType</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 18-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/SubjectClassification">
+            <Schema-ID>18</Schema-ID>
+            <skos:note>In diesem Feld kann eine zusätzliche, fachspezifische, klassifikatorische Sacherschließung erfolgen.</skos:note>
+            <skos:prefLabel>SubjectClassification</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 18.a-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/SubjectClassificationType">
+            <Schema-ID>18.a</Schema-ID>
+            <skos:note>Typ des fachspezifischen Klassifizierungsschemas. CESSDA Topic Classification, JEL Classification. Weitere Klassifikationen bei Bedarf möglich.</skos:note>
+            <skos:prefLabel>SubjectClassificationType</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>jel</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 19-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/SubjectDescription">
+            <Schema-ID>19</Schema-ID>
+            <skos:note>In diesem Feld können weitere Sacherschließungsmerkmale ohne Relation oder Feldbezeichnung angegeben werden, z.B. Schlagwortähnliche Angaben oder Zuordnung zu Sachsystematiken. Freitext, max. 100 Wörter</skos:note>
+            <skos:prefLabel>SubjectDescription</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+
+        <!--- Fachspezifische Erschließung-->
+        <!--- ID 20-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/Discipline">
+            <Schema-ID>20</Schema-ID>
+            <skos:note>Feld zur Angabe des Fachbezugs. Systematik der Fächergruppen, Lehr- und Forschungsbereiche und Fachgebiete von DE-Statis</skos:note>
+            <skos:prefLabel>Discipline</skos:prefLabel>
+            <Validation>
+                <required>True</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>DEStatis</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+            <!--- ID 21-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/Method">
+            <Schema-ID>21</Schema-ID>
+            <skos:note>Feld zur Angabe der Methoden, die bei der Entstehung des Forschungsdatensatzes angewandt wurden.</skos:note>
+            <skos:prefLabel>Method</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+            <!--- ID 21.a-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/MethodType">
+            <Schema-ID>21.a</Schema-ID>
+            <skos:prefLabel>MethodType</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>jel</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 22-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/MethodDescription">
+            <Schema-ID>22</Schema-ID>
+            <skos:note>Freitextfeld zur Beschreibung der Erhebungsmethode, -situation, etc.</skos:note>
+            <skos:prefLabel>MethodDescription</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 23-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/SchoolOfThought">
+            <Schema-ID>23</Schema-ID>
+            <skos:note>Freitextfeld für weitere Angaben zur Forschungsmethodik, zu the-oretischen Grundlagen oder Paradigma des den Forschungsdaten zugrundeliegenden For-schungsdesigns.</skos:note>
+            <skos:prefLabel>SchoolOfThought</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- Unterzone Sozialwissenschaft-->
+        <!--- ID 24-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/AnalyisUnit">
+            <Schema-ID>24</Schema-ID>
+            <skos:note>Angabe sozialwissenschaftlicher Anayseeinheiten. Kontrolliertes Vokabular: Individual, Organization, Family, Family: Household family, Household, Housing Unit, Event/Process, Geographic Unit, Time Unit, Text Unit, Group, Object, Other </skos:note>
+            <skos:prefLabel>AnalysisUnit</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>Individual, Organization, Family, Family: Household family, Household, Housing Unit, Event/Process, Geographic Unit, Time Unit, Text Unit, Group, Object, Other</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 25-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/TimeMethod">
+            <Schema-ID>25</Schema-ID>
+            <skos:note>Angabe sozialwissenschaftlicher Forschungsdesigns. Kontrolliertes Vokabluar: Longitudinal, Longitudinal: Cohort/EventBased, Longitudinal: Trend/Repeated cross-section, Longitudinal: Panel, Longitudinal: Continous, Longitudinal: Panel: Interval, Time Series, TimeSeries: Continous, TimeSeries: Discrete, Cross-section, Cross-section ad-hoc follow-up, Other</skos:note>
+            <skos:prefLabel>TimeMethod</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>Longitudinal, Longitudinal: Cohort/EventBased, Longitudinal: Trend/Repeated cross-section, Longitudinal: Panel, Longitudinal: Continous, Longitudinal: Panel: Interval, Time Series, TimeSeries: Continous, TimeSeries: Discrete, Cross-section, Cross-section ad-hoc follow-up, Other</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- Unterzone Texteditorik-->
+        <!--- ID 26-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/TextClass">
+            <Schema-ID>26</Schema-ID>
+            <skos:note>Angabe der Textklasse. Per Formschlagwort aus der GND angeben. Mögliche Werte sind der DTA-Klassifikation zu entnehmen sowie Handschriften und Flugschriften</skos:note>
+            <skos:prefLabel>TextClass</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>DTAKlassifikation</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 27-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/IsEditionOfDocument">
+            <Schema-ID>27</Schema-ID>
+            <skos:note>Angabe des Textträgers, Objekt mit dem ursprünglichen Text. Weitere verwendete Textträger können durch die Wiederholung des Feldes angegeben werden.	Freitext, max. 100 Wörter. URL, PID oder Ort der Aufbewahrung der Textträger samt Signatur als Freitext eintragen;</skos:note>
+            <skos:prefLabel>IsEditionOfDocument</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 27.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/TypeOfDocument">
+            <Schema-ID>27.1</Schema-ID>
+            <skos:note>Angabe, ob der Textträger ein Autograph oder eine Abschrift ist.</skos:note>
+            <skos:prefLabel>TypeOfDocument</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>Autograph, Abschrift</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 27.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/AuthorOfDocument">
+            <Schema-ID>27.2</Schema-ID>
+            <skos:note>Angabe der/s Schreiberin/s des Textträgers oder der Schreibschule / Schreibwerkstatt. Angabe der GND</skos:note>
+            <skos:prefLabel>AuthorOfDocument</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>GND</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 27.3-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/ModeOfTranscription">
+            <Schema-ID>27.3</Schema-ID>
+            <skos:note>Freitextfeld mit Angaben zum verwendeten Verfahren der Tran-skription, dem Verwendeten System und der verwendeten Normen sowie Transkriptions- und Editionsrichtlinien.</skos:note>
+            <skos:prefLabel>ModeOfTranscription</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>300</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- Unterzone Linguistik-->
+        <!--- ID 28-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/CorpusDescription">
+            <Schema-ID>28</Schema-ID>
+            <skos:note>In diesem Feld können nähere Angaben zu einem Korpus gemacht werden (z.B. Informationen zu Sprecher*innen, Umwelt, Kontext, Mehrsprachigkeit etc.)</skos:note>
+            <skos:prefLabel>CorpusDescription</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>300</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 28.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/CorpusModality">
+            <Schema-ID>28.1</Schema-ID>
+            <skos:note>In diesem Feld kann die Modalität eines Korpus als Freitext angegeben werden.</skos:note>
+            <skos:prefLabel>CorpusModality</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 28.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/CorpusAnnotationType">
+            <Schema-ID>28.2</Schema-ID>
+            <skos:note>In diesem Feld kann per Freitext beschrieben werden, wie ein Korpus annotiert wurde, beispielsweise Segmentierung oder Lemmatisierung.</skos:note>
+            <skos:prefLabel>CorpusAnnotationType</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+
+        <!--- Provenienz und Relationen eines Datensatzes -->
+        <!--- ID 29-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/DatasetDate">
+            <Schema-ID>29</Schema-ID>
+            <skos:note>In diesem Feld können zusätzliche, für die Datenproveniez relevante Zeitangaben eingetragen werden. Angabe per ISO 8601-1:2019</skos:note>
+            <skos:prefLabel>DatasetDate</skos:prefLabel>
+            <Validation>
+                <required>null</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>Duration</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+
+        <!--- ID 29.a-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/dataType">
+            <Schema-ID>29.a</Schema-ID>
+            <skos:note>Kontrolliertes Vokabular: Accepted, Available, Copyrighted, Collected, Created, Issued, Submitted, Updated, Valid, Withdrawn, Other</skos:note>
+            <skos:prefLabel>dataType</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>DatasetDate</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>Accepted, Available, Copyrighted, Collected, Created, Issued, Submitted, Updated, Valid, Withdrawn, Other</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 29.b-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/DatasetDatesInformation">
+            <Schema-ID>29.b</Schema-ID>
+            <skos:note>Kann genutzt werden, um zusätzliche Information über die Zeitangaben zu Veröffentlichung oder Datenerhebung zu geben.</skos:note>
+            <skos:prefLabel>DatasetDatesInformation</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlaceOfCollection">
+            <Schema-ID>30</Schema-ID>
+            <skos:note>Feld zur Angabe des Ortes, an welchem Forschungsdaten wie z.B. Interviews entstanden sind bzw. erhoben wurden.</skos:note>
+            <skos:prefLabel>PlaceOfCollection</skos:prefLabel>
+            <Validation>
+                <required>True</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>GND</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlacePoint">
+            <Schema-ID>30.1</Schema-ID>
+            <skos:note>Angabe eines geographischen Punktes im Raum</skos:note>
+            <skos:prefLabel>PlacePoint</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Point</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.1.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlacePointLongitude">
+            <Schema-ID>30.1.1</Schema-ID>
+            <skos:note>Längengrad eines Punktes. Wenn PlacePoint benutzt wird, ist PlacePointLongitude verpflichtend. Der Längengrad des geographischen Punktes wird in Dezimalgraden (Positiv Ost) ausgedrückt. Beispiel: -67.302</skos:note>
+            <skos:prefLabel>PlacePointLongitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>PlacePoint</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Longitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.1.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlacePointLatitude">
+            <Schema-ID>30.1.2</Schema-ID>
+            <skos:note>Breitengrad eines Punktes. Wenn PlacePoint benutzt wird, ist PlacePointLatitude verpflichtend. Der Breitengrad des geographischen Punktes wird in Dezimalgraden (Positiv Nord) ausgedrückt. Example: 31.233</skos:note>
+            <skos:prefLabel>PlacePointLatitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>PlacePoint</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Latitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlaceBox">
+            <Schema-ID>30.2</Schema-ID>
+            <skos:note>Die räumlichen Grenzen eines Rechtecks. Eine Box wird durch zwei geographische Punkte definiert, linke untere und rechte obere Ecke.</skos:note>
+            <skos:prefLabel>PlaceBox</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Box</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.2.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlaceWestBoundLongitude">
+            <Schema-ID>30.2.1</Schema-ID>
+            <skos:note>Westliche Kante des Rechtecks als Längengrad ausgedrückt. Falls PlaceBox benutzt wird, ist PlaceWestBoundLongitude verpflichtend. Der Längengrad des geographischen Punktes wird in Dezimalgraden (Positiv Ost) ausgedrückt.</skos:note>
+            <skos:prefLabel>PlaceWestBoundLongitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>PlaceBox</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Longitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.2.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlaceEastBoundLongitude">
+            <Schema-ID>30.2.2</Schema-ID>
+            <skos:note>Östliche Kante des Rechtecks als Längengrad ausgedrückt. Falls PlaceBox benutzt wird, ist PlaceEastBoundLongitude verpflichtend. Der Längengrad des geographischen Punktes wird in Dezimalgraden (Positiv Ost) ausgedrückt.</skos:note>
+            <skos:prefLabel>PlaceEastBoundLongitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>PlaceBox</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Longitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.2.3-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlaceSouthBoundLatitude">
+            <Schema-ID>30.2.3</Schema-ID>
+            <skos:note>Südliche Kante des Rechtecks als Breitengrad ausgedrückt. Falls PlaceBox benutzt wird, ist PlaceSouthBoundLatitude verfpflichtend. Der Breitengrad des geographischen Punktes wird in Dezimalgraden (Positiv Nord) ausgedrückt.</skos:note>
+            <skos:prefLabel>PlaceSouthBoundLatitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>PlaceBox</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Latitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.2.4-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlaceNorthBoundLatitude">
+            <Schema-ID>30.2.4</Schema-ID>
+            <skos:note>Nördliche Kante des Rechtecks als Breitengrad ausgedrückt. Falls PlaceBox benutzt wird, ist PlaceNorthBoundLatitude verfpflichtend. Der Breitengrad des geographischen Punktes wird in Dezimalgraden (Positiv Nord) ausgedrückt.</skos:note>
+            <skos:prefLabel>PlaceNorthBoundLatitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>PlaceBox</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Latitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.3-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlaceDescription">
+            <Schema-ID>30.3</Schema-ID>
+            <skos:note>Feld, um per Freitext zusätzliche Informationen zum Ortsbezug angeben zu können. Freitext; Max. 100 Wörter.</skos:note>
+            <skos:prefLabel>PlaceDescription</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.4-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlacePolygon">
+            <Schema-ID>30.4</Schema-ID>
+            <skos:note>Ein gezeichnetes Polygon, definiert durch eine Reihe von Punkten und Linien, welche die Punkte in einer geschlossenen Kette verbinden. Ein Polygon wird durch geographische Punkte abgegrenzt. Jeder Punkt wird durch ein Längen-/Breitengradpaar definiert. Der letzte Punkt sollte deckungsgleich mit dem ersten sein. </skos:note>
+            <skos:prefLabel>PlacePolygon</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Polygon</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.4.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlacePolygonPoint">
+            <Schema-ID>30.4.1</Schema-ID>
+            <skos:note>Ein Punkt in einem Polygon. Falls PlacePolygon genutzt wird, ist PlacePolygonPoint verpflichtend. Es bedarf mindestens vier 4 unabhängige Punkte, um eine geschlossene Kurve darzustellen, wobei der letzte Punkt deckungsgleich mit dem ersten sein sollte.</skos:note>
+            <skos:prefLabel>PlacePolygonPoint</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Point</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.4.1.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlacePolygonPointLongitude">
+            <Schema-ID>30.4.1.1 </Schema-ID>
+            <skos:note>Längengrad eines Punktes. Falls PlacePolygon genutzt wird, ist PlacePointLongitude verpflichtend. Der Längengrad des geographischen Punktes wird in Dezimalgraden (Positiv Ost) ausgedrückt.</skos:note>
+            <skos:prefLabel>PlacePolygonPointLongitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>PlacePolygon</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Longitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.4.1.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlacePolygonPointLatitude">
+            <Schema-ID>30.4.1.2 </Schema-ID>
+            <skos:note>Breitengrad eines Punktes. Falls PlacePolygon genutzt wird, ist PlacePointLatitude verpflichtend. Der Breitengrad des geographischen Punktes wird in Dezimalgraden (Positiv Nord) ausgedrückt.</skos:note>
+            <skos:prefLabel>PlacePolygonPointLatitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>PlacePolygon</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Latitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.4.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlaceInPolygonPoint">
+            <Schema-ID>30.4.2 </Schema-ID>
+            <skos:note>Für jede zusammenhängende Fläche, die größer als die Hälfte der Erde ist, definiert als ein (zufälliger) Punkt darin. PlaceInPolygonPoint ist nur notwendig, um das “Innen” eines Polygons anzugeben, wenn das Polygon größer als die Hälfte der Erde ist. Ansonsten wird die kleinere der beiden von dem Polygon umfassten Fläche genutzt. </skos:note>
+            <skos:prefLabel>PlaceInPolygonPoint</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Polygon</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.4.2.1-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlaceInPolygonPointLongitude">
+            <Schema-ID>30.4.2.1 </Schema-ID>
+            <skos:note>Längengrad des Punktes. Falls PlaceInPolygonPoint genutzt wird, ist PlacePoint-Longitude verpflichtend. Der Längengrad des geographischen Punktes wird in Dezimalgraden (Positiv Ost) ausgedrückt.</skos:note>
+            <skos:prefLabel>PlaceInPolygonPointLongitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>PlaceInPolygonPoint</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Longitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 30.4.2.2-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/PlaceInPolygonPointLatitude">
+            <Schema-ID>30.4.2.2 </Schema-ID>
+            <skos:note>Breitengrad des Punktes. Falls PlacePolygonPoint ge-nutzt wird, ist PlacePointLatitude verpflichtend. Der Breitengrad des geographischen Punktes wird in Dezimalgraden (Positiv Nord) ausgedrückt.</skos:note>
+            <skos:prefLabel>PlaceInPolygonPointLatitude</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>PlacePolygonPoint</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>Latitude</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 31-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/DataProvenance">
+            <Schema-ID>31</Schema-ID>
+            <skos:note>Feld, um mit Freitext Angaben zur Provenienz eines Forschungsdatensatzes angeben zu können.</skos:note>
+            <skos:prefLabel>DataProvenance</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>300</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 32-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/DataSourceType">
+            <Schema-ID>32</Schema-ID>
+            <skos:note>Anmerkungen zur Qualität der Datengrundlagen des Forschungsdatensatzes, etwa zum Zustand von Textträgern, Archivquellen oder zu Grunde liegenden Statistiken.</skos:note>
+            <skos:prefLabel>DataSourceType</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 33-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/DataQuality">
+            <Schema-ID>33</Schema-ID>
+            <skos:note>Hier können Angaben zur Qualität des Forschungsdatensatzes gemacht werden. Freitext</skos:note>
+            <skos:prefLabel>DataQuality</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 34-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/RelatedIdentifier">
+            <Schema-ID>34</Schema-ID>
+            <skos:note>Identifier von in Beziehung stehenden Ressourcen. Diese müssen global eindeutig sein.</skos:note>
+            <skos:prefLabel>RelatedIdentifier</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 34.a-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/relatedIdentifierType">
+            <Schema-ID>34.a</Schema-ID>
+            <skos:note>Kontrolliertes Vokabular: ARK, arXiv, bibcode, DOI, EAN13, EISSN, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, UPC, URL, URN, w3id</skos:note>
+            <skos:prefLabel>relatedIdentifierType</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>ARK, arXiv, bibcode, DOI, EAN13, EISSN, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, UPC, URL, URN, w3id</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 34.b-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/relationType">
+            <Schema-ID>34.b</Schema-ID>
+            <skos:note>Kontrolliertes Vokabular: isCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, IsDescribedBy, DescribesHasMetadata, IsMetadataFor, HasVersion, IsVersionOf, IsNewVersionOf, IsPreviousVersionOf, IsPartOf, HasPart, IsReferencedBy, References, IsDocumentedBy, Documents, IsCompiledBy, Compiles, IsVariantFromOf, IsOriginalFormOf, IsIdenticalTo, IsReviewedBy, Reviews, IsDerivedFrom, IsSourceOf, IsRequiredBy, Requires, IsObsoletedBy, Obsoletes</skos:note>
+            <skos:prefLabel>relationType</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>isCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, IsDescribedBy, DescribesHasMetadata, IsMetadataFor, HasVersion, IsVersionOf, IsNewVersionOf, IsPreviousVersionOf, IsPartOf, HasPart, IsReferencedBy, References, IsDocumentedBy, Documents, IsCompiledBy, Compiles, IsVariantFromOf, IsOriginalFormOf, IsIdenticalTo, IsReviewedBy, Reviews, IsDerivedFrom, IsSourceOf, IsRequiredBy, Requires, IsObsoletedBy, Obsoletes</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 35-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/SeeAlso">
+            <Schema-ID>35</Schema-ID>
+            <skos:note>In diesem Feld können Datensätze durch Katalogisier*innen angegeben werden, welche für den Hinweis "Dieser verwandete Datensatz könnte auch interessant sein..." Nutzenden angezeigt werden. Angabe per PID</skos:note>
+            <skos:prefLabel>SeeAlso</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+
+        <!--- Manifestation-Beschreibung-->
+        <!--- ID 37-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/ResourceType">
+            <Schema-ID>37</Schema-ID>
+            <skos:note>Angaben zum Dateityp</skos:note>
+            <skos:prefLabel>ResourceType</skos:prefLabel>
+            <Validation>
+                <required>True</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 37.a-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/resourceTypeGeneral">
+            <Schema-ID>37.a</Schema-ID>
+            <skos:note>Kontrolliertes Vokabluar: Audiovisual, Collection, DataPaper, Dataset, Event, Geospatial, Image, InteractiveResource, Model, Numeric, PhysicalObject, Service, Software, Sound, Tabular data, Text, ThreeD, Workflow, Other</skos:note>
+            <skos:prefLabel>resourceTypeGeneral</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>null</WordCount>
+                <internalNormvokabular>Audiovisual, Collection, DataPaper, Dataset, Event, Geospatial, Image, InteractiveResource, Model, Numeric, PhysicalObject, Service, Software, Sound, Tabular data, Text, ThreeD, Workflow, Other</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 40-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/StructureConformsTo">
+            <Schema-ID>40</Schema-ID>
+            <skos:note>Angaben zur Datenstruktur, Modellierung, Programmier- oder Skriptsprache wie Markup, XML-TEI, CIDOC-CRM oder Python, R, C++, etc.</skos:note>
+            <skos:prefLabel>StructureConformsTo</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 41-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/CharacterEncoding">
+            <Schema-ID>41</Schema-ID>
+            <skos:note>Optionale Angabe zur Kodierung des Schriftsatzes bei textbasierten Dateiformaten und den Datei-Metadaten.</skos:note>
+            <skos:prefLabel>CharacterEncoding</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+        <!--- ID 42-->
+        <skos:Concept rdf:about="www.kinf.wiai.uni-bamberg.de/AlexanderKrumrey/Masterarbeit/Configuration/BitstreamFileDescription">
+            <Schema-ID>42</Schema-ID>
+            <skos:note>In diesem Feld können zusätzliche Angaben über den Bitstream festgehalten werden, etwa Informationen zum verwendeten Softwarepaket, zu zum Speichern verwendeten Softwaremodulen oder die Erhebungs- und Verarbeitungsmethoden, soweit diese für die technische Nutzung des Bitstreams des Forschungsdatensatzes relevant sind.</skos:note>
+            <skos:prefLabel>BitstreamFileDescription</skos:prefLabel>
+            <Validation>
+                <required>False</required>
+                <requiredElement>null</requiredElement>
+                <WordCount>100</WordCount>
+                <internalNormvokabular>null</internalNormvokabular>
+                <externalNormvokabular>null</externalNormvokabular>
+                <LOD>null</LOD>
+                <Coordinates>null</Coordinates>
+                <Date>null</Date>
+                <emptyString>False</emptyString>
+            </Validation>
+        </skos:Concept>
+    </Configuration>
+</rdf:RDF>

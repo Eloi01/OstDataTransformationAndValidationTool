@@ -1,0 +1,264 @@
+This Log lists all failed items from the transformation and validation process.
+ID: 2
+Titel: TestDatenset teilweise Falsche Eingaben
+	 ------------------------------------
+	 Start of Standardization
+	 ------------------------------------
+
+	 * Changed TimePeriodeDates
+	   from 2020:01;01/2021:01:01 to 2020-01;01/2021-01-01
+
+	 ------------------------------------
+	 Start of Transformation
+	 ------------------------------------
+
+	 ------------------------------------
+	 Start of Validation
+	 ------------------------------------
+
+	 * Provided Creator could not be extracted. 
+	  * Failed Validation for Schema-Element : Creator
+	    Provided: https://orcid.org/1234-1234
+	    The Specification for Schema ID 2 is: 
+	    Angabe der schöpferisch direkt beteiligten Personen. Die Personen sind per LOD anzugeben (GND, VIAF, oder Orcid)
+
+	 * Provided CreatorAffiliation could not be extracted. 
+	  * Failed Validation for Schema-Element : CreatorAffiliation
+	    Provided: http://d-nb.info/gnd
+	    The Specification for Schema ID 2.1 is: 
+	    Affiliation der schöpferisch direkt beteiligten Personen. Affiliationen sind per GND oder ROR anzugeben
+
+	 * Provided Contributor could not be extracted. 
+	  * Failed Validation for Schema-Element : Contributor
+	    Provided: https://viaf.org/
+	    The Specification for Schema ID 3 is: 
+	    Angabe weiterer, an der Erstellung des Forschungsdatensatzes beteiligter Personen. Die Contributor sind per LOD anzugeben (GND, VIAF oder Orcid)
+
+	 * Schema ID: 3.1  ContributorAffiliation-Element has been changed from
+	  "https://ror.org/02omUU211" to "['https://ror.org/02omUU211']"
+
+	 * Schema ID: 6  FundingReference-Element has been changed from
+	  "http://d-nb.info/gnd/923804078-12345" to "['http://d-nb.info/gnd/923804078-12345']"
+
+	 * Schema ID: 12  GeoLocation-Element has been changed from
+	  "http://d-nb.info/gnd/187804078-1111-1112" to "['http://d-nb.info/gnd/187804078-1111']"
+
+	 * Schema ID: 12.1  geoLocationPoint-Element has been changed from
+	  "0.1223,-12.999" to "['0.1223', '-12.999']"
+
+	 * Provided pointLongitude is not a valid Longitude. 
+	  * Failed Validation for Schema-Element : pointLongitude
+	    Provided: 999999
+	    The Specification for Schema ID 12.1.1 is: 
+	    Längengrad des Punktes.	Wenn geolocationPoint benutzt wird, ist pointLongitude verpflichtend.
+
+	 * Provided pointLatitude could not be extracted. 
+	  * Failed Validation for Schema-Element : pointLatitude
+	    Provided: -1299999.999
+	    The Specification for Schema ID 12.1.2 is: 
+	    "Breitengrad des Punktes. Wenn geolocationPoint benutzt wird, ist pointLongitude verpflichtend.
+
+	 * Schema ID: 12.2  geoLocationBox-Element has been changed from
+	  "0.1223,-12.999, 12.99, -99.1" to "['0.1223', '-12.999', '12.99', '-99.1']"
+
+	 * Schema ID: 12.2.1  westBoundLongitude-Element has been changed from
+	  "0.1223.00" to "0.1223"
+
+	 * Schema ID: 12.2.2  eastBoundLongitude-Element has been changed from
+	  "0.1223,9" to "0.1223"
+
+	 * Schema ID: 12.2.3  southBoundLatitude-Element has been changed from
+	  "0.1223.,." to "0.1223"
+
+	 * Schema ID: 12.2.4  northBoundLatitude-Element has been changed from
+	  "0.1223.aaa" to "0.1223"
+
+	 * Provided geoLocationPolygon does not contain valid Coordinates.
+	  * Failed Validation for Schema-Element : geoLocationPolygon
+	    Provided: 0.1223,-12.999, 12.99
+	    The Specification for Schema ID 12.4 is: 
+	    Ein gezeichnetes Polygon, definiert durch eine Reihe von Punkten und Linien, welche die Punkte in einer geschlossenen Kette verbindet.
+
+	 * Schema ID: 12.4.1  polygonPoint-Element has been changed from
+	  "0.1223,-12.999" to "['0.1223', '-12.999']"
+
+	 * Provided polygonPointLongitude is not a Point.
+	  * Failed Validation for Schema-Element : polygonPointLongitude
+	    Provided: 0.1223
+	    The Specification for Schema ID 12.4.1.1 is: 
+	    Längengrad eines Punktes. Falls geoLocationPolygon genutzt wird, ist polygoneLongitude verpflichtend.
+
+	 * Provided polygonPointLatitude is not a Point.
+	  * Failed Validation for Schema-Element : polygonPointLatitude
+	    Provided: 0.1223,-12.999,09990
+	    The Specification for Schema ID 12.4.1.2 is: 
+	    Breitengrad eines Punktes. Falls geoLocationPolygon genutzt wird, ist polygoneLatitude verpflichtend.
+
+	  * Failed Validation for Schema-Element : GeoLocationAlternativeNameDate
+	    Provided: 2020-01-01/2021-01-01/2099-0000000
+	    The Specification for Schema ID 12.5.1 is: 
+	    Zeitraum, in welchem die Bezeichnung im Feld „GeoLocationAlternativeName“ verwendet wurde.	Angabe als Freitext, wenn konkrete Zeiträume benennbar sind per ISO 8601-1:2019 Revision (Anfang und Ende des Zeitraums angeben (YYYY, YYYY-MM oder YYYY-MM-TT).
+
+	  * Failed Validation for Schema-Element : TimePeriodeDates
+	    Provided: 2020-01;01/2021-01-01
+	    The Specification for Schema ID 14.a is: 
+	    Für genaue Angaben zum Zeitraum, über den Aussagen getroffen werden. Angabe per ISO 8601-1:2019 Revision; Beim Ausfüllen jeweils Anfang und Ende des Zeitraums angeben (YYYY, YYYY-MM oder YYYY-MM-TT).
+
+	  * Failed Validation for Schema-Element : AnalysisUnit
+	    Provided: other2
+	    The Specification for Schema ID 24 is: 
+	    Angabe sozialwissenschaftlicher Anayseeinheiten. Kontrolliertes Vokabular: Individual, Organization, Family, Family: Household family, Household, Housing Unit, Event/Process, Geographic Unit, Time Unit, Text Unit, Group, Object, Other 
+
+	  * Failed Validation for Schema-Element : TimeMethod
+	    Provided: longituinal
+	    The Specification for Schema ID 25 is: 
+	    Angabe sozialwissenschaftlicher Forschungsdesigns. Kontrolliertes Vokabluar: Longitudinal, Longitudinal: Cohort/EventBased, Longitudinal: Trend/Repeated cross-section, Longitudinal: Panel, Longitudinal: Continous, Longitudinal: Panel: Interval, Time Series, TimeSeries: Continous, TimeSeries: Discrete, Cross-section, Cross-section ad-hoc follow-up, Other
+
+	 * Schema ID: 27.2  AuthorOfDocument-Element has been changed from
+	  "http://d-nb.info/gnd/123804078" to "['http://d-nb.info/gnd/123804078']"
+
+	  * Failed Validation for Schema-Element : DatasetDate
+	    Provided: 2020-01-01/2021-01-01/opopo
+	    The Specification for Schema ID 29 is: 
+	    In diesem Feld können zusätzliche, für die Datenproveniez relevante Zeitangaben eingetragen werden. Angabe per ISO 8601-1:2019
+
+	 * Schema ID: 30  PlaceOfCollection-Element has been changed from
+	  "http://d-nb.info/gnd/123804078" to "['http://d-nb.info/gnd/123804078']"
+
+	 * Schema ID: 30.1  PlacePoint-Element has been changed from
+	  "0.1223,-12.999" to "['0.1223', '-12.999']"
+
+	 * Schema ID: 30.2  PlaceBox-Element has been changed from
+	  "0.1223,-12.999, 12.99, -99.1" to "['0.1223', '-12.999', '12.99', '-99.1']"
+
+	 * Provided PlacePolygon does not contain valid Coordinates.
+	  * Failed Validation for Schema-Element : PlacePolygon
+	    Provided: 0.1223,-12.999, 12.99, -99.1
+	    The Specification for Schema ID 30.4 is: 
+	    Ein gezeichnetes Polygon, definiert durch eine Reihe von Punkten und Linien, welche die Punkte in einer geschlossenen Kette verbinden. Ein Polygon wird durch geographische Punkte abgegrenzt. Jeder Punkt wird durch ein Längen-/Breitengradpaar definiert. Der letzte Punkt sollte deckungsgleich mit dem ersten sein. 
+
+	 * Schema ID: 30.4.1  PlacePolygonPoint-Element has been changed from
+	  "0.1223,-12.999" to "['0.1223', '-12.999']"
+
+	 * Provided PlaceInPolygonPoint does not contain valid Coordinates.
+	  * Failed Validation for Schema-Element : PlaceInPolygonPoint
+	    Provided: 0.1223,-12.999, 12.99, -99.1
+	    The Specification for Schema ID 30.4.2  is: 
+	    Für jede zusammenhängende Fläche, die größer als die Hälfte der Erde ist, definiert als ein (zufälliger) Punkt darin. PlaceInPolygonPoint ist nur notwendig, um das “Innen” eines Polygons anzugeben, wenn das Polygon größer als die Hälfte der Erde ist. Ansonsten wird die kleinere der beiden von dem Polygon umfassten Fläche genutzt. 
+
+	 ++++++++++++++++++++
+	 +Validation failed!+
+	 ++++++++++++++++++++
+
+ID: 3
+Titel: 3
+	 ------------------------------------
+	 Start of Standardization
+	 ------------------------------------
+
+	 ------------------------------------
+	 Start of Transformation
+	 ------------------------------------
+
+	 * Following Fields from Input could not be matched:
+	   {'CorpusModalityA', 'PlaceInPolygonPointA', 'StructureConformsToA', 'ProjectTimeA', 'LanguageA', 'CreatorA', 'TimePeriodeDatesA', 'westBoundLongitudeA', 'PlacePointLatitudeA', 'ContributorTypeA', 'geoLocationPlaceA', 'DatasetDatesInformationA', 'pointLongitudeA', 'PlaceInPolygonPointLatitudeA', 'PlaceNorthBoundLatitudeA', 'ModeOfTranscriptionA', 'resourceTypeGeneralA', 'TextClassA', 'polygonPointA', 'PlaceInPolygonPointLongitudeA', 'ContributorAffiliationA', 'PlaceWestBoundLongitudeA', 'PlaceEastBoundLongitudeA', 'ProjectShortNameA', 'polygonPointLatitudeA', 'GeoLocationA', 'PlacePointA', 'CorpusAnnotationTypeA', 'DataSourceTypeA', 'polygonPointLongitudeA', 'relationTypeA', 'AnalysisUnitA', 'CorpusDescriptionA', 'SubjectClassificationA', 'ProjectNameA', 'geoLocationPointA', 'TimePeriodA', 'GeoLocationAlternativeNameDateA', 'PlaceSouthBoundLatitudeA', 'geoLocationBoxA', 'CreatorAffiliationA', 'PlaceBoxA', 'MethodDescriptionA', 'PlacePolygonPointLatitudeA', 'DisciplineA', 'TimePeriodDescriptionA', 'DataQualityA', 'ResourceTypeA', 'geoLocationPolygonA', 'CharacterEncodingA', 'PlaceDescriptionA', 'SeeAlsoA', 'PlaceOfCollectionA', 'TimeMethodA', 'TypeOfDocumentA', 'SchoolOfThoughtA', 'TitelA', 'southBoundLatitudeA', 'pointLatitudeA', 'MethodTypeA', 'SubjectNormedTypeA', 'SubjectNormedA', 'northBoundLatitudeA', 'dataTypeA', 'AbstractA', 'AuthorOfDocumentA', 'FundingReferenceA', 'DataProvenanceA', 'SubjectDescriptionA', 'SubjectClassificationTypeA', 'RelatedIdentifierA', 'PlacePolygonPointLongitudeA', 'MethodA', 'eastBoundLongitudeA', 'GeoLocationAlternativeNameA', 'IsEditionOfDocumentA', 'PlacePolygonPointA', 'LanguageTypeA', 'PlacePointLongitudeA', 'ContributorA', 'DatasetDateA', 'relatedIdentifierTypeA', 'PlacePolygonA'}
+
+	 ------------------------------------
+	 Start of Validation
+	 ------------------------------------
+
+	 * Creator: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 2. Creator is:
+	   Angabe der schöpferisch direkt beteiligten Personen. Die Personen sind per LOD anzugeben (GND, VIAF, oder Orcid)
+
+	 * Titel: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 7. Titel is:
+	   Angabe des Titels des Forschungsdatensatzes. Ein aussagekräftiger Titel beinhaltet die Art der Daten und deren den Inhalt.Titel deutsch und englisch angeben. Bereits vorhandene Originaltitel, etwa bei Altdaten, können über das Tag „isNative“ markiert werden. Beispiel: Tabelle mit allen Geburtstagen der böhmischen Könige: Table with Birthdays of all Boheminan Kings.
+
+	 * Abstract: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 10. Abstract is:
+	   Textförmige Zusammenfassung des Inhaltes der Forschungsdaten und der beschreibenden Metadaten. Aufbau: Teaser: Der Teaser fasst Inhalt und Dateitypen des Forschungsdatensatzes in einem Satz zusammen. Text: Hier sollen weitere Angaben zum Forschungsdatensatz eingetragen werden, etwa zum Inhalt und Forschungskontext, zur Entstehung/Provenienz der Daten, zu den Erhebungs- und Verarbeitungsmethoden, etc. Abstract auf Deutsch und Englisch angeben. Max. 300 Wörter/1000 Zeichen. Eine Dopplung mit Angaben aus anderen Metadatenfeldern ist vorgesehen.
+
+	 * GeoLocation: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 12. GeoLocation is:
+	   In diesem Feld kann angegeben werden, zu welchen Orten im Forschungsdatensatz Aussagen getroffen werden. Angabe per GND. Wenn das Feld leer ist, kann keine geographische Angabe gemacht werden. Zusätzliche geographisch Angaben sind über die Unter-felder möglich.
+
+	 * Discipline: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 20. Discipline is:
+	   Feld zur Angabe des Fachbezugs. Systematik der Fächergruppen, Lehr- und Forschungsbereiche und Fachgebiete von DE-Statis
+
+	 * PlaceOfCollection: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 30. PlaceOfCollection is:
+	   Feld zur Angabe des Ortes, an welchem Forschungsdaten wie z.B. Interviews entstanden sind bzw. erhoben wurden.
+
+	 * ResourceType: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 37. ResourceType is:
+	   Angaben zum Dateityp
+
+	 ++++++++++++++++++++
+	 +Validation failed!+
+	 ++++++++++++++++++++
+
+ID: 4
+Titel: 4
+	 ------------------------------------
+	 Start of Standardization
+	 ------------------------------------
+
+	 ------------------------------------
+	 Start of Transformation
+	 ------------------------------------
+
+	 * Following Fields from Input could not be matched:
+	   {'CorpusModalityA', 'PlaceInPolygonPointA', 'StructureConformsToA', 'ProjectTimeA', 'LanguageA', 'CreatorA', 'TimePeriodeDatesA', 'westBoundLongitudeA', 'PlacePointLatitudeA', 'ContributorTypeA', 'geoLocationPlaceA', 'DatasetDatesInformationA', 'pointLongitudeA', 'PlaceInPolygonPointLatitudeA', 'PlaceNorthBoundLatitudeA', 'ModeOfTranscriptionA', 'resourceTypeGeneralA', 'TextClassA', 'polygonPointA', 'PlaceInPolygonPointLongitudeA', 'ContributorAffiliationA', 'PlaceWestBoundLongitudeA', 'PlaceEastBoundLongitudeA', 'ProjectShortNameA', 'polygonPointLatitudeA', 'GeoLocationA', 'PlacePointA', 'CorpusAnnotationTypeA', 'DataSourceTypeA', 'polygonPointLongitudeA', 'relationTypeA', 'AnalysisUnitA', 'CorpusDescriptionA', 'SubjectClassificationA', 'ProjectNameA', 'geoLocationPointA', 'TimePeriodA', 'GeoLocationAlternativeNameDateA', 'PlaceSouthBoundLatitudeA', 'geoLocationBoxA', 'CreatorAffiliationA', 'PlaceBoxA', 'MethodDescriptionA', 'PlacePolygonPointLatitudeA', 'DisciplineA', 'TimePeriodDescriptionA', 'DataQualityA', 'ResourceTypeA', 'geoLocationPolygonA', 'CharacterEncodingA', 'PlaceDescriptionA', 'SeeAlsoA', 'PlaceOfCollectionA', 'TimeMethodA', 'TestElementGND', 'TypeOfDocumentA', 'SchoolOfThoughtA', 'TitelA', 'southBoundLatitudeA', 'pointLatitudeA', 'MethodTypeA', 'SubjectNormedTypeA', 'SubjectNormedA', 'northBoundLatitudeA', 'dataTypeA', 'AbstractA', 'AuthorOfDocumentA', 'FundingReferenceA', 'DataProvenanceA', 'SubjectDescriptionA', 'SubjectClassificationTypeA', 'RelatedIdentifierA', 'PlacePolygonPointLongitudeA', 'MethodA', 'eastBoundLongitudeA', 'GeoLocationAlternativeNameA', 'IsEditionOfDocumentA', 'PlacePolygonPointA', 'LanguageTypeA', 'PlacePointLongitudeA', 'ContributorA', 'DatasetDateA', 'relatedIdentifierTypeA', 'PlacePolygonA'}
+
+	 ------------------------------------
+	 Start of Validation
+	 ------------------------------------
+
+	 * Creator: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 2. Creator is:
+	   Angabe der schöpferisch direkt beteiligten Personen. Die Personen sind per LOD anzugeben (GND, VIAF, oder Orcid)
+
+	 * Titel: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 7. Titel is:
+	   Angabe des Titels des Forschungsdatensatzes. Ein aussagekräftiger Titel beinhaltet die Art der Daten und deren den Inhalt.Titel deutsch und englisch angeben. Bereits vorhandene Originaltitel, etwa bei Altdaten, können über das Tag „isNative“ markiert werden. Beispiel: Tabelle mit allen Geburtstagen der böhmischen Könige: Table with Birthdays of all Boheminan Kings.
+
+	 * Abstract: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 10. Abstract is:
+	   Textförmige Zusammenfassung des Inhaltes der Forschungsdaten und der beschreibenden Metadaten. Aufbau: Teaser: Der Teaser fasst Inhalt und Dateitypen des Forschungsdatensatzes in einem Satz zusammen. Text: Hier sollen weitere Angaben zum Forschungsdatensatz eingetragen werden, etwa zum Inhalt und Forschungskontext, zur Entstehung/Provenienz der Daten, zu den Erhebungs- und Verarbeitungsmethoden, etc. Abstract auf Deutsch und Englisch angeben. Max. 300 Wörter/1000 Zeichen. Eine Dopplung mit Angaben aus anderen Metadatenfeldern ist vorgesehen.
+
+	 * GeoLocation: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 12. GeoLocation is:
+	   In diesem Feld kann angegeben werden, zu welchen Orten im Forschungsdatensatz Aussagen getroffen werden. Angabe per GND. Wenn das Feld leer ist, kann keine geographische Angabe gemacht werden. Zusätzliche geographisch Angaben sind über die Unter-felder möglich.
+
+	 * Discipline: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 20. Discipline is:
+	   Feld zur Angabe des Fachbezugs. Systematik der Fächergruppen, Lehr- und Forschungsbereiche und Fachgebiete von DE-Statis
+
+	 * PlaceOfCollection: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 30. PlaceOfCollection is:
+	   Feld zur Angabe des Ortes, an welchem Forschungsdaten wie z.B. Interviews entstanden sind bzw. erhoben wurden.
+
+	 * ResourceType: This required Item is not set!
+	   The whole Item will therefore not be transformed.
+	   Schema-Specification for 37. ResourceType is:
+	   Angaben zum Dateityp
+
+	 ++++++++++++++++++++
+	 +Validation failed!+
+	 ++++++++++++++++++++
+
