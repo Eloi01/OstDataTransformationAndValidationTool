@@ -1,5 +1,6 @@
 import re
 from Log import Log
+from typing import List
 
 
 class LODContext:
@@ -76,14 +77,14 @@ class AllLodStrategy:
             return False
 
 
-def extract_gnd_link(string: str) -> [str]:
+def extract_gnd_link(string: str) -> List[str]:
     """Extracts the GND-Substrings of a given String and returns the matches as a List."""
 
     string_result_list = re.findall(r"http[s]?://d-nb\.info/gnd/\d+-{0,1}\d*\b", string)
     return string_result_list
 
 
-def extract_viaf_link(string: str) -> [str]:
+def extract_viaf_link(string: str) -> List[str]:
     """Extracts the VIAF-Substrings of a given String and returns the matches as a List."""
 
     string_result_list = re.findall(r"http[s]?://viaf\.org/viaf/[\d]+\b", string)
@@ -91,7 +92,7 @@ def extract_viaf_link(string: str) -> [str]:
 
 
 # a valid orcid id contains 4x4 digits separated by a '-' Last Character is allowed to be numeral or a 'X'
-def extract_orcid_link(string: str) -> [str]:
+def extract_orcid_link(string: str) -> List[str]:
     """Extracts the Orcid-Substrings of a given String and returns the matches as a List."""
 
     string_result = re.match(r"(http[s]?://orcid\.org/(\d{4}-){3}(\d{3}){1}[\d|X]{1}\b)+", string)
@@ -103,7 +104,7 @@ def extract_orcid_link(string: str) -> [str]:
     return string_result_list
 
 
-def extract_ror_link(string: str) -> [str]:
+def extract_ror_link(string: str) -> List[str]:
     """Extracts the ROR-Substrings of a given String and returns the matches as a List."""
 
     string_result = re.findall(r"http[s]?://ror\.org/0[^ILO]{6}\d{2}\b", string)
@@ -116,7 +117,7 @@ def check_contains_lod(string: str) -> bool:
         return True
 
 
-def extract_lod(string: str) -> [str]:
+def extract_lod(string: str) -> List[str]:
     """Extracts any contained LOD in a given String and returns them in a list"""
     lod_list = []
     for item in extract_gnd_link(string):

@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import List
 
 
 @dataclass
@@ -10,7 +11,7 @@ class Configuration:
         self.name: str = "null"
         self.note: str = "null"
         self.id: str = "null"
-        self.list_of_alt_labels: [str] = []
+        self.list_of_alt_labels: List[str] = []
         self.required: str = "null"
         self.required_element: str = "null"
         self.wordcount: str = "null"

@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import List
 
 
 @dataclass
@@ -6,7 +7,7 @@ class Log:
     def __init__(self):
         """Represents the Log for one single element."""
         self.file_id: str = "null"
-        self.list_of_log_entries: [str] = []
+        self.list_of_log_entries: List[str] = []
         self.object_title: str = "null"
         self.passed: bool = False
 

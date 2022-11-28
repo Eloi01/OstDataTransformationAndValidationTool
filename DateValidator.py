@@ -1,7 +1,8 @@
 import re
+from typing import List
 
 
-def extract_date_format(string: str) -> [str]:
+def extract_date_format(string: str) -> List[str]:
     """Extracts dates containing in a provided String.
 
     :parameter string: String which shall be investigated.
@@ -26,7 +27,7 @@ def extract_date_format(string: str) -> [str]:
     return False
 
 
-def check_date_duration_format(string: str) -> [str]:
+def check_date_duration_format(string: str) -> List[str]:
     """Extracts date in duration format, which are contained in a provided String.
 
     :parameter string: String which shall be investigated.

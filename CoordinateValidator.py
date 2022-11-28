@@ -1,4 +1,5 @@
 import re
+from typing import List
 from Log import Log
 
 
@@ -113,7 +114,7 @@ class PolygonStrategy:
             return False
 
 
-def extract_geo_coordinates(string: str) -> [str]:
+def extract_geo_coordinates(string: str) -> List[str]:
     """Extracts Geo-Coordinates from a provided String.
 
     :parameter string: String which shall be investigated.
@@ -173,7 +174,7 @@ def validate_point(point: str) -> bool:
             return False
 
 
-def extract_geo_point(point: str) -> [str]:
+def extract_geo_point(point: str) -> List[str]:
     """Extracts the containing points in a provided String.
     Assumes the provided Point is in the format of (Coordinate, Coordinate).
 
@@ -190,7 +191,7 @@ def extract_geo_point(point: str) -> [str]:
         return list_of_points
 
 
-def extract_polygon(point: str) -> [str]:
+def extract_polygon(point: str) -> List[str]:
     """Extracts the containing polygon in a provided String.
     Assumes the provided Polygon is in the format of (Coordinate, Coordinate,...).
 

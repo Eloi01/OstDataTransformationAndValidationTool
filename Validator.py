@@ -6,7 +6,7 @@ import InputItem
 import WordCountValidation
 from Log import Log
 import Configuration
-
+from typing import List
 """Couple of methods which are used in the general validation process."""
 
 
@@ -208,7 +208,7 @@ def check_date_validation(input_item, configuration_item, log):
                 return False
 
 
-def validate_input_item(input_item: InputItem.InputItem, log, configuration_list: [Configuration.Configuration]):
+def validate_input_item(input_item: InputItem.InputItem, log, configuration_list: List[Configuration.Configuration]):
     """Coordinates the validation process of a given Input-Item by evoking the validation method for each single
        Configuration-Item which is contained in a separate given list of configuration items.
         Returns the result of the Validation process.
